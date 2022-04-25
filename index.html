@@ -11,13 +11,13 @@
   <link rel="stylesheet" href="assets/vendor/swiper/css/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body onscroll="navScrollBackground()">
 
-  <!-- === header section start === -->
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light">
+  <!-- === page-header section start === -->
+  <header class="page-header fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <img src="assets/images/logo.png" alt="logo" class="img-fluid">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,13 +26,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto align-items-lg-center">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Reseller</a>
+              <a class="nav-link" href="#reseller">Reseller</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
               <a href="#" class="btn info-btn rounded-pill">Free Trial</a>
@@ -42,23 +42,21 @@
       </div>
     </nav>
   </header>
-  <!-- ===//end of header section === -->
+  <!-- ===//end of page-header section === -->
  
 
   <!-- === main-banner section start === -->
   <section class="main-banner position-relative">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <h1>Get full access to 
-            over 160,000 videos 
-            on demand.</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-          <a href="#" class="btn info-btn rounded-pill">Free Trial</a>
-        </div>
+      <div class="w-lg-50">
+        <h1>Get full access to 
+          over 160,000 videos 
+          on demand.</h1>
+        <p class="py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+        <a href="#" class="btn btn-lg info-btn rounded-pill">Free Trial</a>
       </div>
     </div>
-    <img src="assets/images/banner-img.png" alt="banenr-img" class="img-fluid">
+    <img src="assets/images/banner-img.png" alt="banenr-img" class="img-fluid banner-img">
   </section>
   <!-- ===//end of main-banner section === -->
  
@@ -66,8 +64,8 @@
   <!-- === best-IPTV-provider section start === -->
   <section class="best-IPTV-provider">
     <div class="container">
-      <h2 class="section-heading text-center">Best IPTV Provider</h2>
-      <div class="row g-xxl-5 g-4">
+      <h2 class="section-heading text-center mb-5">Best IPTV Provider</h2>
+      <div class="row g-xxl-5 g-4 mt-4">
         <div class="col-lg-4 col-md-6">
           <div class="features">
             <img src="assets/images/icon/sport.png" alt="icon" class="img-fluid icon">
@@ -121,7 +119,7 @@
     <div class="container">
       <h2 class="section-heading text-center">Best Market Prices</h2>
       <p class="section-description text-center">Experience the fastest iptv service, your favorite channels in your backpack.</p>
-      <div class="row g-4">
+      <div class="row g-4 mt-4">
         <div class="col-lg-3 col-md-6">
           <div class="price-item">
             <div class="price-header">
@@ -140,7 +138,7 @@
               <li class="list-group-item"> Instant Activation</li>
             </ul>
             <div class="text-center">
-              <a href="#" class="btn">ORDER NOW</a>
+              <a href="#" class="btn info-btn rounded-pill">ORDER NOW</a>
             </div>
           </div>
         </div>
@@ -162,7 +160,7 @@
               <li class="list-group-item"> Instant Activation</li>
             </ul>
             <div class="text-center">
-              <a href="#" class="btn">ORDER NOW</a>
+              <a href="#" class="btn info-btn rounded-pill">ORDER NOW</a>
             </div>
           </div>
         </div>
@@ -184,7 +182,7 @@
               <li class="list-group-item"> Instant Activation</li>
             </ul>
             <div class="text-center">
-              <a href="#" class="btn">ORDER NOW</a>
+              <a href="#" class="btn info-btn rounded-pill">ORDER NOW</a>
             </div>
           </div>
         </div>
@@ -206,7 +204,7 @@
               <li class="list-group-item"> Instant Activation</li>
             </ul>
             <div class="text-center">
-              <a href="#" class="btn">ORDER NOW</a>
+              <a href="#" class="btn info-btn rounded-pill">ORDER NOW</a>
             </div>
           </div>
         </div>
@@ -220,15 +218,15 @@
  
 
   <!-- === clients-review section start === -->
-  <section class="clients-review">
+  <section class="clients-review py-80">
     <div class="container">
-      <div class="row g-lg-5 g-4 align-items-center">
+      <div class="row g-lg-5 g-4 align-items-center mb-5">
         <div class="col-lg-6">
-          <h2 class="section-heading">Happy Clients Say About Us</h2>
-          <p class="section-description">Our Biggest Goal Is To Provide Our Clients A Reliable Service 
+          <h2 class="section-heading mb-2">Happy Clients Say About Us</h2>
+          <p class="section-description pb-3">Our Biggest Goal Is To Provide Our Clients A Reliable Service 
             And The Best Customer Support To Deal With Any Kind Of 
             Issues. Join 4K Media FAMILY.</p>
-          <a href="#" class="btn">Free Trial</a>
+          <a href="#" class="btn btn-lg info-btn rounded-pill">Free Trial</a>
         </div>
         <div class="col-lg-6">
           <img src="assets/images/client-review.png" alt="clients-review" class="img-fluid">
@@ -307,9 +305,9 @@
  
 
   <!-- === contact section start === -->
-  <section class="contact">
+  <section class="contact" id="contact">
     <div class="container">
-      <div class="row g-5">
+      <div class="row gx-lg-5 gy-5">
         <div class="col-lg-6">
           <img src="assets/images/contact.png" alt="contact" class="img-fluid">
         </div>
@@ -319,25 +317,25 @@
             nec. Mauris blandit sapien tellus, eu tincidunt odio aliquet 
             vitae. Sed et arcu vitae odio venenatis sodales.</p>
     
-          <form class="contact-form">
-            <div class="row g-4">
+          <form class="contact-form py-4">
+            <div class="row g-4 mb-2">
               <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="First Name  *">
+                <input type="text" class="form-control form-control-lg" placeholder="First Name *">
               </div>
               <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="Last Name  *">
+                <input type="text" class="form-control form-control-lg" placeholder="Last Name  *">
               </div>
               <div class="col-12">
-                <input type="text" class="form-control" placeholder="Email  *">
+                <input type="text" class="form-control form-control-lg" placeholder="Email  *">
               </div>
               <div class="col-12">
-                <input type="text" class="form-control" placeholder="Phone  *">
+                <input type="text" class="form-control form-control-lg" placeholder="Phone  *">
               </div>
               <div class="col-12">
-                <textarea rows="4" class="form-control" placeholder="Message"></textarea>
+                <textarea rows="5" class="form-control form-control-lg" placeholder="Message"></textarea>
               </div>
             </div>
-            <button class="btn">Free Trial</button>
+            <button type="submit" class="btn btn-lg info-btn rounded-pill mt-4">Free Trial</button>
           </form>
         </div>
       </div>
@@ -346,8 +344,8 @@
   <!-- ===//end of contact section === -->
  
 
-  <!-- === ready section start === -->
-  <section class="ready">
+  <!-- === reseller section start === -->
+  <section class="reseller py-80" id="reseller">
     <div class="container">
       <div class="row g-lg-0 g-4 align-items-center">
         <div class="col-lg-5">
@@ -356,7 +354,7 @@
           <p class="section-description description-lg">Mauris porttitor faucibus arcu, ac mollis magna  
             nec. Mauris blandit sapien tellus, eu tincidunt   
             vitae. Sed et arcu vitae odio venenatis.</p>
-          <a href="#" class="btn">RESELLER</a>
+          <a href="#" class="btn btn-lg info-btn rounded-pill mt-4">RESELLER</a>
         </div>
         <div class="col-lg-7">
           <img src="assets/images/ready.png" alt="clients-review" class="img-fluid">
@@ -364,7 +362,7 @@
       </div>
     </div>
   </section>
-  <!-- ===//end of ready section === -->
+  <!-- ===//end of reseller section === -->
  
 
   

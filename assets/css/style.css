@@ -2,6 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 /*===// end of abstracts css === */
 /*=== base css start === */
+@import url("../abstracts/_mixins.scss");
+@import url("../abstracts/_mixins.scss");
+@import url("../abstracts/_mixins.scss");
+@import url("../abstracts/_mixins.scss");
+@import url("../abstracts/_mixins.scss");
 * {
   margin: 0;
   padding: 0;
@@ -33,10 +38,322 @@ body {
   color: #000;
 }
 
+@media (min-width: 992px) {
+  .w-lg-50 {
+    width: 50%;
+  }
+}
+
+.py-80 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.pb-80 {
+  padding-bottom: 80px;
+}
+
 /*===// end of base css === */
 /*=== components css start === */
+.info-btn {
+  background: #29aae1;
+  color: #fff;
+  font-weight: 500;
+  padding: .5rem 1.5rem;
+}
+
+.info-btn.btn-lg {
+  padding: .75rem 2rem;
+}
+
+.section-heading {
+  font-size: 40px;
+  font-weight: 600;
+  color: #000;
+  position: relative;
+}
+
+.section-heading::before {
+  content: '';
+  width: 120px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #29aae1;
+  position: absolute;
+  bottom: -10px;
+}
+
+.section-heading.text-center::before {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@media (max-width: 767px) {
+  .section-heading {
+    font-size: 35px;
+  }
+  .section-heading::before {
+    width: 100px;
+    height: 4px;
+    bottom: -5px;
+  }
+}
+
+.section-description {
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+  padding-top: 30px;
+}
+
+@media (min-width: 1200px) {
+  .heading-lg {
+    font-size: 50px;
+  }
+  .description-lg {
+    font-size: 20px;
+  }
+}
+
+.main-banner {
+  background: url(../images/banner-bg.png) no-repeat center center/cover;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-banner h1 {
+  font-size: 60px;
+  font-weight: 700;
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .main-banner h1 {
+    font-size: 40px;
+  }
+}
+
+.main-banner p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.main-banner .banner-img {
+  width: 55vw;
+  position: absolute;
+  right: 0;
+  bottom: -10vw;
+}
+
+.best-IPTV-provider {
+  padding: 12vw 0 80px 0;
+}
+
+.best-IPTV-provider .features {
+  text-align: center;
+}
+
+.best-IPTV-provider .features .icon {
+  max-width: 70px;
+}
+
+.best-IPTV-provider .features .features-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+  padding: 20px 0 10px 0;
+}
+
+.best-IPTV-provider .features .features-description {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+}
+
+.prices {
+  background: rgba(41, 170, 225, 0.06);
+  padding: 80px 0;
+}
+
+.prices .price-item {
+  background: #fff;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.1);
+  padding: 15px 15px 30px 15px;
+  text-align: center;
+}
+
+.prices .price-item .price-header {
+  background: #29aae1;
+  border-radius: 5% 5% 50% 50% / 10% 10% 100% 100%;
+  padding: 20px;
+  padding-bottom: 30px;
+}
+
+.prices .price-item .price-header .day {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.prices .price-item .price-header .price-amount {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  padding: 5px 0;
+  white-space: nowrap;
+}
+
+.prices .price-item .price-header .month {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.prices .price-item .short-description {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  padding: 20px 0;
+}
+
+.prices .price-item .lis-group {
+  margin-bottom: 20px;
+}
+
+.prices .price-item .lis-group .list-group-item {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+}
+
+.clients-review .review-slider .swiper-slide {
+  padding: 40px 0;
+}
+
+.clients-review .review-slider .swiper-slide .review-item {
+  -webkit-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.12);
+  background: #fff;
+  border-radius: 30px;
+  padding: 30px;
+}
+
+@media (max-width: 767px) {
+  .clients-review .review-slider .swiper-slide .review-item {
+    padding: 20px 15px;
+  }
+}
+
+.clients-review .review-slider .swiper-slide .review-item .rating {
+  color: #ffa342;
+  margin-bottom: 20px;
+}
+
+.clients-review .review-slider .swiper-slide .review-item .title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+}
+
+.clients-review .review-slider .swiper-slide .review-item .review-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  margin: 20px 0;
+}
+
+.clients-review .review-slider .swiper-slide .review-item .client-avatar {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.clients-review .review-slider .swiper-slide .review-item .client-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  margin-top: 10px;
+}
+
+.clients-review .swiper-pagination-bullet-active {
+  background: #29aae1;
+}
+
+.contact-form .form-control {
+  background: rgba(41, 170, 225, 0.06);
+  border-radius: 30px;
+  border: none;
+  font-size: 18px;
+  color: #000;
+  font-weight: 400;
+}
+
+.contact-form .form-control::-webkit-input-placeholder {
+  color: #000;
+}
+
+.contact-form .form-control:-ms-input-placeholder {
+  color: #000;
+}
+
+.contact-form .form-control::-ms-input-placeholder {
+  color: #000;
+}
+
+.contact-form .form-control::placeholder {
+  color: #000;
+}
+
+.contact-form .form-control-lg {
+  min-height: calc(1.5em + 1.5rem + 2px);
+  padding: 0.75rem 1rem;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
 /*===// end of components css === */
 /*=== layouts css start === */
+.page-header {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.page-header .navbar .navbar-brand {
+  max-width: 100px;
+}
+
+.page-header .navbar .navbar-nav .nav-link {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+.page-header .navbar .navbar-nav .nav-link:hover, .page-header .navbar .navbar-nav .nav-link.active {
+  color: rgba(255, 255, 255, 0.9);
+}
+
 /*===// end of layouts css === */
 /*=== pages start === */
 /*===// end of pages  === */

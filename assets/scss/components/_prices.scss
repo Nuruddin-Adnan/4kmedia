@@ -1,0 +1,44 @@
+.prices{
+    background: rgba($color-bright-cerulean, 0.06);
+    padding: 80px 0;
+
+    .price-item{
+        background: $color-white;
+        border-radius: 30px;
+        box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.1);
+        padding: 15px 15px 30px 15px;
+        text-align: center;
+
+        .price-header{
+            background: $color-bright-cerulean;
+            border-radius: 5% 5% 50% 50% / 10% 10% 100% 100%;
+            padding: 20px;
+            padding-bottom: 30px;
+
+            .day{
+                @include text-style(16px, 500, $color-white);
+                text-transform: uppercase;
+            }
+            .price-amount{
+                @include text-style(40px, 700, $color-white);
+                padding: 5px 0;
+                white-space: nowrap;
+            }
+            .month{
+                @include text-style(18px, 700, $color-white);
+            }
+        }
+
+        .short-description{
+            @include text-style(16px, 400, $color-black);
+            padding: 20px 0;
+        }
+
+        .lis-group{
+            margin-bottom: 20px;
+            .list-group-item{
+                @include text-style(16px, 500, $color-black);
+            }
+        }
+    }
+}

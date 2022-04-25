@@ -1,0 +1,48 @@
+@import url('../abstracts/_mixins.scss');
+
+.clients-review{
+    .review-slider{
+        .swiper-slide{
+            padding: 40px 0;
+            .review-item{
+                box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.12);
+                background: $color-white;
+                border-radius: 30px;
+                padding: 30px;
+                @media (max-width: 767px){
+                    padding: 20px 15px;
+
+                }
+
+                .rating{
+                    color: #ffa342;
+                    margin-bottom: 20px;
+                }
+
+                .title{
+                    @include text-style(20px, 600, $color-black);
+                }
+                .review-text{
+                    @include text-style(16px, 400, $color-black);
+                    margin: 20px 0;
+                }
+                .client-avatar{
+                    width: 65px;
+                    height: 65px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+                .client-name{
+                    @include text-style(18px, 600, $color-black);
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+    .swiper-pagination-bullet-active{
+        background: $color-bright-cerulean;
+    }
+}
+
+// @include text-style(40px, 600, $color-black);

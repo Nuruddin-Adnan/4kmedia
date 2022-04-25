@@ -1,0 +1,23 @@
+.contact-form{
+    .form-control{
+        background: rgba($color-bright-cerulean, 0.06);
+        border-radius: 30px;
+        border: none;
+        font-size: 18px;
+        color: $color-black;
+        font-weight: 400;
+
+        &::placeholder {
+            color: $color-black;
+        }
+    }
+
+    .form-control-lg{
+        min-height: calc(1.5em + 1.5rem + 2px);
+        padding: 0.75rem 1rem;
+    }
+
+    textarea{
+        resize: none;
+    }
+}

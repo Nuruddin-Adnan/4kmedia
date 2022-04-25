@@ -1,0 +1,18 @@
+@import url('../abstracts/_mixins.scss');
+
+.best-IPTV-provider{
+    padding: 12vw 0 80px 0;
+    .features{
+        text-align: center;
+        .icon{
+            max-width: 70px;
+        }
+        .features-title{
+            @include text-style(24px, 600, $color-black);
+            padding: 20px 0 10px 0;
+        }
+        .features-description{
+            @include text-style(16px, 400, $color-black);
+        }
+    }
+}
