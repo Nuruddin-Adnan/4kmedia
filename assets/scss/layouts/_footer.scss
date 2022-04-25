@@ -1,0 +1,97 @@
+@import url('../abstracts/_mixins.scss');
+
+.footer{
+    background: #272a2d;
+    color: $color-white;
+
+    .footer-top{
+        padding: 60px 0;
+
+        @media(max-width: 992px){
+            .footer-top-content{
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-top-content > div {
+                padding: 20px 0;
+            }
+        }
+
+        .title {
+            @include text-style(30px, 600, $color-white);
+        }
+        .description {
+            @include text-style(16px, 500, $color-white);
+            padding: 5px 0 20px 0;
+        }
+
+        .footer-logo-img{
+            width: 150px;
+        }
+
+        .newsletter{
+            .newsletter-form {
+                position: relative;
+
+                .form-control {
+                    @include text-style(16px, 400, $color-white);
+                    background-color: rgba($color-white, 0.07);
+                    border: none;
+                    border-radius: 50px;
+                    padding: 0.75rem 50px 0.75rem 1rem;
+
+                    &::placeholder {
+                        color: $color-white;
+                    }
+                }
+
+                .newsletter-btn {
+                    position: absolute;
+                    top: 50%;
+                    right: 10px;
+                    transform: translateY(-50%);
+                    color: $color-bright-cerulean;
+                }
+            }
+        }
+    }
+
+    .footer-bottom{
+        border-top: 1px solid #464646;
+        padding: 20px 0;
+    
+        .footer-nav {
+            @media(max-width: 1199px){
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .nav-link {
+                color: #999999;
+                u{
+                    color: $color-white;
+                }
+
+                &:hover {
+                    color: $color-bright-cerulean;
+                }
+
+                &.disabled:hover{
+                    color: #999999;
+                }
+            }
+        }
+        .social-nav {
+            @media(max-width: 1199px){
+                justify-content: center;
+            }
+            .nav-link {
+                color: $color-white;
+
+                &:hover {
+                    color: $color-bright-cerulean;
+                }
+            }
+        }
+    }
+}
